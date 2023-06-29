@@ -3,8 +3,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Header from "./components/Navbar";
 import { Routes,Route, BrowserRouter as Router } from "react-router-dom";
 import Productlist from "./components/Productlist";
+import ProductDetails from "./components/ProductDetails";
 function App() {
-  const product = useSelector((state) => state.allProducts.products);
+  // const product = useSelector((state) => state.allProducts.products);
 
   const NotFound = () => {
     return (
@@ -13,15 +14,15 @@ function App() {
       </div>
     );
   };
-  console.log(product);
+  // console.log(product);
   return (
-    <div className="text-danger">
+    <div className="">
           <Header />
    
        <Router>
       <Routes>
         <Route path="/" element={<Productlist />} />
-        <Route path="/product/:productID" element={"to be added"} />
+        <Route path="/product/:productID" element={<ProductDetails/>} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>

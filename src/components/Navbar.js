@@ -1,11 +1,12 @@
-import Container from 'react-bootstrap/Container';
-import Navbar from 'react-bootstrap/Navbar';
+import Container from "react-bootstrap/Container";
+import Navbar from "react-bootstrap/Navbar";
 
 function Header() {
   return (
     <Navbar className="bg-body-tertiary">
       <Container>
-        <Navbar.Brand href="#home">Redux Store</Navbar.Brand>
+        <Navbar.Brand href="/">Redux Store</Navbar.Brand>
+
         <Navbar.Toggle />
         <Navbar.Collapse className="justify-content-end">
           {/* <Navbar.Text>

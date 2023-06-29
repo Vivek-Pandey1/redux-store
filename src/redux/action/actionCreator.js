@@ -10,3 +10,8 @@ export const selectedProduts = (product)=>{
         payload: product,
     }
 }
+export const removeSelectedProduts = (product)=>{
+    return{
+        type:'REMOVE_SELECTED_PRODUCT',
+    }
+}
