@@ -22,7 +22,9 @@ function App() {
        <Router>
       <Routes>
         <Route path="/" element={<Productlist />} />
+        <Route path="/redux-store" element={<Productlist />} />
         <Route path="/product/:productID" element={<ProductDetails/>} />
+        <Route path="/redux-store/product/:productID" element={<ProductDetails/>} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>
